@@ -14,7 +14,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 // ----------- Helper API -----------
-const API_URL = "http://localhost:3000";
+const API_URL = "https://swiftguardpay-backend.onrender.com";
+
 const fetchWithAuth = (url, options = {}) => {
   const token = localStorage.getItem("token");
   return fetch(API_URL + url, {
